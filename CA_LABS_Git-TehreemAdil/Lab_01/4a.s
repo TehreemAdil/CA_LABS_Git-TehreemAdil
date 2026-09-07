@@ -17,12 +17,14 @@ main:
     sw   x10, 0(x5)           # Stores 32 bits of x10 at address 0x100
 
 
-    li x6, 0x1F0
+    li x6, 0x1F0 # Load base address 0x1F0 into x6
     sw x11 , 0(x6) # Stores 32 bits of x11 at address 0x1F0
 
-    lhu x12, 0(x5)
+    lhu x12, 0(x5) # Loads halfword 0x6464 from address 0x100 into x12
     
-    lh x13, 0(x6)
+    lh x13, 0(x6) # Loads  halfword 0x1919 from address 0x1F0 into x13
+        
 
-    lb x14, 0(x6)
+    lb x14, 0(x6)  # Loads 0x19 from address 0x1F0 into x14
+
 
