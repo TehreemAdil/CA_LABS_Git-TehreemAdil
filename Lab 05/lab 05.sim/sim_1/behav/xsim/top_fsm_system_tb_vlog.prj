@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Downloads/clock_divider.v" \
+"../../../../../Downloads/debouncer.v" \
+"../../../../../Downloads/leds.v" \
+"../../../../../Downloads/skeleton_top_fsm.v" \
+"../../../../../Downloads/switches.v" \
+"../../../../lab 05.srcs/sim_1/new/top_fsm_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

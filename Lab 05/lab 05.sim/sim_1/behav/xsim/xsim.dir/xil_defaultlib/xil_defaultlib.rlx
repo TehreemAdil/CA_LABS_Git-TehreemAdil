@@ -1,0 +1,11 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/ta11696/Downloads/clock_divider.v,1790151777,verilog,,C:/Users/ta11696/Downloads/debouncer.v,,clock_divider,,,,,,,,
+C:/Users/ta11696/Downloads/debouncer.v,1790151789,verilog,,C:/Users/ta11696/Downloads/leds.v,,debouncer,,,,,,,,
+C:/Users/ta11696/Downloads/leds.v,1790151798,verilog,,C:/Users/ta11696/Downloads/skeleton_top_fsm.v,,leds,,,,,,,,
+C:/Users/ta11696/Downloads/skeleton_top_fsm.v,1790156340,verilog,,C:/Users/ta11696/Downloads/switches.v,,top_fsm_system,,,,,,,,
+C:/Users/ta11696/Downloads/switches.v,1790151814,verilog,,C:/Users/ta11696/lab 05/lab 05.srcs/sim_1/new/top_fsm_tb.v,,switches,,,,,,,,
+C:/Users/ta11696/lab 05/lab 05.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/ta11696/lab 05/lab 05.srcs/sim_1/new/top_fsm_tb.v,1790155977,verilog,,,,top_fsm_system_tb,,,,,,,,
