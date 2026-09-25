@@ -18,5 +18,5 @@ loop:
     addi x5, x5, -1
     j    loop
 
-end:
+loop_end:
     jalr x0, 0(x1)

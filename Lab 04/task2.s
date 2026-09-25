@@ -2,7 +2,7 @@
 .text
 
 main:
-    addi x10, x0, 5
+    addi x10, x0, 3
     jal  x1, ntri
 
 end:

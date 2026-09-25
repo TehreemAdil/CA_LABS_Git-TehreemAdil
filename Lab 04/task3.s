@@ -1,6 +1,6 @@
 .data
 # Define an unsorted array of 8 integers in memory
-my_array: .word 3, 1, 4, 1, 5, 9, 2, 6 
+my_array: .word 3, 1, 5, 9, 6 
 
 .text
 .globl main
