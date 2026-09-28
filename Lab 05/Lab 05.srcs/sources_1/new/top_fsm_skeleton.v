@@ -19,6 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+`timescale 1ns / 1ps
+
 module top_fsm_skeleton (
     input wire clk,                  // Onboard 100 MHz clock source
     input wire pbin,                 // Physical pushbutton reset
@@ -70,11 +72,11 @@ module top_fsm_skeleton (
         .leds(physical_leds)
     );
 
-    // State definitions
-    localparam IDLE  = 2'b00;
-    localparam INPUT = 2'b01;
-    localparam COUNT = 2'b10;
-    localparam DONE  = 2'b11;
+    // Added WAIT_RELEASE state to wait for user to clear switches before starting next cycle
+    localparam IDLE         = 2'b00;
+    localparam INPUT        = 2'b01;
+    localparam COUNT        = 2'b10;
+    localparam WAIT_RELEASE = 2'b11;
 
     reg [1:0] state, next_state;
     reg [15:0] counter;
@@ -83,6 +85,7 @@ module top_fsm_skeleton (
     always @(*) begin
         case (state)
             IDLE: begin
+                // Transition to INPUT when switches are non-zero
                 if (switch_data[15:0] != 16'd0)
                     next_state = INPUT;
                 else
@@ -90,21 +93,24 @@ module top_fsm_skeleton (
             end
             
             INPUT: begin
+                // Automatically move to counting state after capturing value
                 next_state = COUNT;
             end
             
             COUNT: begin
+                // Once counter reaches zero, move to wait for switch release
                 if (counter == 16'd0)
-                    next_state = DONE;
+                    next_state = WAIT_RELEASE;
                 else
                     next_state = COUNT;
             end
             
-            DONE: begin
+            WAIT_RELEASE: begin
+                // Return to IDLE once user turns off all physical switches
                 if (switch_data[15:0] == 16'd0)
                     next_state = IDLE;
                 else
-                    next_state = DONE;
+                    next_state = WAIT_RELEASE;
             end
             
             default: next_state = IDLE;
@@ -114,6 +120,7 @@ module top_fsm_skeleton (
     // Sequential state register and counter update
     always @(posedge slow_clk or posedge rst_clean) begin
         if (rst_clean) begin
+            // Asynchronous reset forces FSM back to IDLE and clears counter
             state <= IDLE;
             counter <= 16'd0;
         end else begin
@@ -121,16 +128,20 @@ module top_fsm_skeleton (
             
             case (next_state)
                 IDLE: begin
+                    // Keep counter cleared while waiting for input
                     counter <= 16'd0;
                 end
                 INPUT: begin
+                    // Capture current switch value into counter
                     counter <= switch_data[15:0];
                 end
                 COUNT: begin
+                    // Decrement counter down to zero while ignoring new switch inputs
                     if (counter > 16'd0)
                         counter <= counter - 16'd1;
                 end
-                DONE: begin
+                WAIT_RELEASE: begin
+                    // Keep counter at zero while waiting for switches to clear
                     counter <= 16'd0;
                 end
                 default: counter <= 16'd0;
@@ -138,7 +149,7 @@ module top_fsm_skeleton (
         end
     end
 
-    // Output bus formatting
+    // Output bus formatting: LED display continuously shows counter value
     always @(*) begin
         led_write_data = {16'd0, counter};
     end
