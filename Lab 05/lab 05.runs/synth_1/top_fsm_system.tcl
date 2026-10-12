@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/ta11696/lab 05/lab 05.runs/synth_1/top_fsm_system.tcl"
+  variable script "C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.runs/synth_1/top_fsm_system.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,27 +70,28 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 5
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/ta11696/lab 05/lab 05.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/ta11696/lab 05/lab 05.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/ta11696/lab 05/lab 05.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/ta11696/Downloads/clock_divider.v
-  C:/Users/ta11696/Downloads/debouncer.v
-  C:/Users/ta11696/Downloads/leds.v
-  C:/Users/ta11696/Downloads/switches.v
-  C:/Users/ta11696/Downloads/skeleton_top_fsm.v
+  {C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.srcs/sources_1/new/skeleton_top_fsm.v}
+  {C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.srcs/sources_1/new/clock_divder.v}
+  {C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.srcs/sources_1/new/debouncer.v}
+  {C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.srcs/sources_1/new/leds.v}
+  {C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.srcs/sources_1/new/switches.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -101,8 +102,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/ta11696/lab 05/lab 05.srcs/constrs_1/new/top_fsm.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/ta11696/lab 05/lab 05.srcs/constrs_1/new/top_fsm.xdc}}]
+read_xdc {{C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.srcs/constrs_1/new/top_fsm.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.srcs/constrs_1/new/top_fsm.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

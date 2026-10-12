@@ -3,8 +3,9 @@
 
 .data
 # A sorted array of 8 integers
-my_array: .word 2, 4, 6, 8, 10, 12, 14, 16
+my_array: .word 1, 2, 4, 6, 8, 10, 12, 14
 
+.text
 main:
     la   x10, my_array      # Base address of the array
     addi x11, x0, 0         # Left index = 0

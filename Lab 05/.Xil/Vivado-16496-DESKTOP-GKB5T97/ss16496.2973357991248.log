@@ -1,0 +1,18 @@
+srcscan starts
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/clock_divider.v' (SORT-1002)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/debouncer.v' (SORT-1002)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/leds.v' (SORT-1002)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/skeleton_top_fsm.v' (SORT-1002)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/switches.v' (SORT-1002)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/clock_divider.v' (VERI-1517)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/debouncer.v' (VERI-1517)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/leds.v' (VERI-1517)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/skeleton_top_fsm.v' (VERI-1517)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/switches.v' (VERI-1517)
+INFO: analyzing module top_fsm_system_tb (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:top_fsm_system_tb
+END of tops
+C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.srcs/sim_1/new/top_fsm_tb.v(4): INFO: compiling module 'top_fsm_system_tb_default' (VERI-1018)
+C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.srcs/sim_1/new/top_fsm_tb.v(11): WARNING: Module <top_fsm_system> not found while processing module instance <uut> (VERI-1063)
+srcscan exits with return value 0

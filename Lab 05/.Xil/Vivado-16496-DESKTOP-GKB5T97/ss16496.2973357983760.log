@@ -1,0 +1,14 @@
+srcscan starts
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/clock_divider.v' (SORT-1002)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/debouncer.v' (SORT-1002)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/leds.v' (SORT-1002)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/skeleton_top_fsm.v' (SORT-1002)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/switches.v' (SORT-1002)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/clock_divider.v' (VERI-1517)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/debouncer.v' (VERI-1517)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/leds.v' (VERI-1517)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/skeleton_top_fsm.v' (VERI-1517)
+ERROR: cannot open verilog file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/switches.v' (VERI-1517)
+Listing tops:
+END of tops
+srcscan exits with return value 0

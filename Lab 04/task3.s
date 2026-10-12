@@ -1,6 +1,6 @@
 .data
 # Define an unsorted array of 8 integers in memory
-my_array: .word 3, 1, 4, 1, 5, 9, 2, 6 
+my_array: .word 3, 1, 4, 1  
 
 .text
 .globl main
@@ -27,6 +27,7 @@ bubble:
     addi x5, x0, 0            # int i = 0
 
 outer_loop:
+
     bge  x5, x11, end_bubble  # for (int i = 0; i < len; i++)
 
     add  x6, x0, x5           # int j = i
@@ -46,7 +47,6 @@ inner_loop:
 
     # (if (a[i] < a[j]))
     bge  x28, x30, skip_swap  # If a[i] >= a[j], skip the swap
-
     # Swap logic
     sw   x30, 0(x7)           # Store a[j] value into a[i] address
     sw   x28, 0(x29)          # Store old a[i] value into a[j] address

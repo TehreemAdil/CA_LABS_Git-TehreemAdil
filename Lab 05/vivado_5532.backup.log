@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Sep 23 15:12:43 2026
+# Process ID: 5532
+# Current directory: C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22392 C:\Users\TTKT\Downloads\CA_LABS_Git-TehreemAdil\Lab 05\lab 05.xpr
+# Log file: C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/vivado.log
+# Journal file: C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project {C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/clock_divider.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/debouncer.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/leds.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/switches.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Downloads/skeleton_top_fsm.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 1017.066 ; gain = 0.000
+set_property source_mgmt_mode None [curexit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 23 15:15:02 2026...
+ton_top_fsm.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:57 ; elapsed = 00:01:14 . Memory (MB): peak = 1016.082 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 23 15:14:39 2026...
+ Vivado at Wed Sep 23 15:13:47 2026...
+ has been returned to its previous state.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 23 15:14:00 2026...

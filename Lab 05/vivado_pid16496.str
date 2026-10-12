@@ -1,0 +1,142 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 16496
+License: Customer
+
+Current time: 	Wed Sep 23 15:13:01 PKT 2026
+Time zone: 	Pakistan Standard Time (Asia/Karachi)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	TTKT
+User home directory: C:/Users/TTKT
+User working directory: C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/TTKT/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/TTKT/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/TTKT/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/vivado.log
+Vivado journal file location: 	C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/vivado.jou
+Engine tmp dir: 	C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/.Xil/Vivado-16496-DESKTOP-GKB5T97
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 965 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  6814 ms.
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1453 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// WARNING: HEventQueue.dispatchEvent() is taking  2488 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// HMemoryUtils.trashcanNow. Engine heap size: 965 MB. GUI used memory: 58 MB. Current time: 9/23/26, 3:13:06 PM PKT
+// Opening Vivado Project: C:\Users\TTKT\Downloads\CA_LABS_Git-TehreemAdil\Lab 05\lab 05.xpr. Version: Vivado v2020.1 
+// bz (cs):  Open Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3332 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1518 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3283 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/ta11696/lab 05' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 98 MB (+99814kb) [00:02:06]
+// [Engine Memory]: 965 MB (+859957kb) [00:02:06]
+// [GUI Memory]: 116 MB (+14257kb) [00:02:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  25481 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1032 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2279 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  2119 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1031 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1006.375 ; gain = 0.000 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2903 ms. Increasing delay to 4000 ms.
+// Project name: lab 05; location: C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05; part: xc7a35tcpg236-1
+// WARNING: HEventQueue.dispatchEvent() is taking  1115 ms.
+dismissDialog("Open Project"); // bz (cs)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 431ms to process. Increasing delay to 3000 ms.
+// a (cs): Critical Messages: addNotify
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3013 ms. Increasing delay to 9039 ms.
+// WARNING: updateGUI() is taking  1177 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1392ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1392 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1182 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1008 ms.
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+closeMainWindow("lab 05 - [C:/Users/TTKT/Downloads/CA_LABS_Git-TehreemAdil/Lab 05/lab 05.xpr] - Vivado 2020.1"); // cs
+// TclEventType: DG_GRAPH_STALE
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 128 MB (+6654kb) [00:02:40]
+// Tcl Message: update_compile_order -fileset sources_1 
