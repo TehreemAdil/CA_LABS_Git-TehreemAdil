@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
+<<<<<<< HEAD
 // Engineer: 
 // 
 // Create Date: 09/23/2026 03:39:51 PM
@@ -16,6 +17,13 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
+=======
+// Engineer: Muddassir Ali
+
+// Module Name: switches
+// Project Name: Counter
+// Target Devices: Baasys 3
+>>>>>>> 1e97a160fc7357c9145019023b56532714c9a859
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -33,9 +41,18 @@ module switches(
 
     // Emergency LED writing logic
     always @(posedge clk) begin
+<<<<<<< HEAD
         if (rst)
             leds <= 16'd0;
         else if (writeEnable)
             leds <= writeData[15:0];
     end
 endmodule
+=======
+        if (rst) 
+            leds <= 16'd0;
+        else if (writeEnable) 
+            leds <= writeData[15:0];
+    end
+endmodule
+>>>>>>> 1e97a160fc7357c9145019023b56532714c9a859

@@ -9,7 +9,7 @@ end:
     j end
 
 fact:
-    addi sp, sp, -8
+    addi sp, sp, -80
     sw   x1, 4(sp)
     sw   x10, 0(sp)
 
