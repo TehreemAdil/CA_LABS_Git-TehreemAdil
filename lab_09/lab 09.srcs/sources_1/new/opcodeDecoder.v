@@ -1,9 +1,24 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Module Name: opcodeDecoder (Main Control)
-// ALUOp: 00 = add (LW/SW), 01 = subtract (BEQ), 10 = R-type (use funct3/funct7),
-//        11 = I-type arithmetic (use funct3 only, funct7 ignored)
+// Company: 
+// Engineer: 
+// 
+// Create Date: 10/21/2026 01:56:52 PM
+// Design Name: 
+// Module Name: opcodeDecoder
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
 //////////////////////////////////////////////////////////////////////////////////
+
 module opcodeDecoder(
     input      [6:0] opcode,
     output reg       RegWrite,
@@ -21,7 +36,7 @@ module opcodeDecoder(
     localparam [6:0] OP_BRANCH  = 7'b1100011; // BEQ
  
     always @(*) begin
-        // Safe defaults (also used for unsupported opcodes)
+        // Safe defaults used for unsupported opcodes too
         RegWrite = 1'b0;
         ALUOp    = 2'b00;
         MemRead  = 1'b0;
