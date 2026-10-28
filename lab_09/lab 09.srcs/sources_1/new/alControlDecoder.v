@@ -20,36 +20,34 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module alu_control (
-    input  [1:0] ALUOp,
-    input  [2:0] funct3,
-    input  [6:0] funct7,
+    input      [1:0] ALUOp,
+    input      [2:0] funct3,
+    input      [6:0] funct7,
     output reg [3:0] ALUControl
 );
-
     always @(*) begin
-        // Default safe value
         ALUControl = 4'b0000;
-
         case (ALUOp)
-            2'b00: ALUControl = 4'b0010; // addition 
-            2'b01: ALUControl = 4'b0110; // subtraction
-            2'b10: begin // R/I-type 
+            2'b00: ALUControl = 4'b0010;           // LW/SW: add
+            2'b01: ALUControl = 4'b0110;           // BEQ: subtract
+            2'b10: begin                           // R-type
                 case (funct3)
-                    3'b000: begin // add addi sub
-                        if (funct7[5] == 1'b1)
-                            ALUControl = 4'b0110; // sub
-                        else
-                            ALUControl = 4'b0010; // add  addi
-                    end
-                    3'b001: ALUControl = 4'b0111; // sll
-                    3'b100: ALUControl = 4'b0011; // xor
-                    3'b101: ALUControl = 4'b1000; // srl
-                    3'b110: ALUControl = 4'b0001; // or
-                    3'b111: ALUControl = 4'b0000; // amd
+                    3'b000:  ALUControl = funct7[5] ? 4'b0110 : 4'b0010; // SUB / ADD
+                    3'b001:  ALUControl = 4'b0111; // SLL
+                    3'b100:  ALUControl = 4'b0011; // XOR
+                    3'b101:  ALUControl = 4'b1000; // SRL
+                    3'b110:  ALUControl = 4'b0001; // OR
+                    3'b111:  ALUControl = 4'b0000; // AND
                     default: ALUControl = 4'b0000;
                 endcase
             end
-            default ALUControl = 4'b0000;
+            2'b11: begin                           // I-type arithmetic (ADDI): funct7 ignored
+                case (funct3)
+                    3'b000:  ALUControl = 4'b0010; // ADDI
+                    default: ALUControl = 4'b0010;
+                endcase
+            end
+            default: ALUControl = 4'b0000;
         endcase
     end
 endmodule
