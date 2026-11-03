@@ -1,0 +1,13 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/Downloads2/project_10_ff/project_10_ff.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/Downloads2/project_10_ff/project_10_ff.srcs/sim_1/new/top_tb.v,1793346036,verilog,,,,tb_lab10,,,,,,,,
+D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/addressDecoder.v,1793333004,verilog,,D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/clockDivider.v,,addressDecoder,,,,,,,,
+D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/clockDivider.v,1793333004,verilog,,D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/dataMemory.v,,clockDivider,,,,,,,,
+D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/dataMemory.v,1793333004,verilog,,D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/instructionMemory.v,,dataMemory,,,,,,,,
+D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/instructionMemory.v,1793342808,verilog,,D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/ioInterface.v,,instructionMemory,,,,,,,,
+D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/ioInterface.v,1793333004,verilog,,D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/lab10_top.v,,ioInterface,,,,,,,,
+D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/lab10_top.v,1793333004,verilog,,D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/riscv_core.v,,lab10_top,,,,,,,,
+D:/Downloads2/project_10_ff/project_10_ff.srcs/sources_1/imports/rtl/riscv_core.v,1793333004,verilog,,D:/Downloads2/project_10_ff/project_10_ff.srcs/sim_1/new/top_tb.v,,riscv_core,,,,,,,,
