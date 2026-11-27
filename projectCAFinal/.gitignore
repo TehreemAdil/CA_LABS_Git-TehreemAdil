@@ -1,0 +1,17 @@
+*.runs/
+*.cache/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.gen/
+.Xil/
+vivado*.jou
+vivado*.log
+vivado*.str
+*.backup.jou
+*.backup.log
+*.pb
+*.wdb
+Thumbs.db
+desktop.ini
+.DS_Store
